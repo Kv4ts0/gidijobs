@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'BPG boxo';
+    src: url(/Fonts/bpg_nino_mtavruli_bold.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'BPG boxo';
+}
+
+
+.parent{
+    background-image: linear-gradient(150deg, rgb(0, 0, 0),  rgba(0, 0, 0, 0.454)), url('../Assets/Cover.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.first{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul{
+    right: 0;
+}
+nav > img{
+    position: absolute;
+    width: 250px;
+}
+nav ul{
+    position: absolute;
+    list-style: none;
+    float: left;
+}
+nav ul li{
+    float: left;
+    margin: 0 25px 0 25px;
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+#active{
+    color: #D7CA00;
+}
+.parent .intro{
+    max-width: 1200px;
+    font-size: 30px;
+    top: 25vh;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+.parent .intro h1{
+    font-weight: 100;
+    font-family: 'BPG Extrasquare';
+    color: white;
+    width: 700px;
+}
+.parent .intro span{
+    color: #D7CA00;
+}
+.parent .intro button{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #D7CA00;
+    border: none;
+    text-align: left;
+    font-size: 25px;
+    padding: 0 30px;
+    font-family: 'BPG ExtraSquare';
+}
+.second{
+    display: flex;
+    flex-direction: column;
+}
+.second .second1{
+    margin: 7vh auto;
+    align-items: center;
+    gap: 5vh;
+    display: flex;
+    max-width: 1200px;
+}
+.second .second1 .content{
+    text-align: right;
+}
+.second .second1 .content h1, .second .second2 .content h1{
+    font-family: "BPG Extrasquare";
+    font-size: 50px;
+}
+.second .second1 .content span, .second .second2 .content span{
+    color: #D7CA00;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+.second .second2{
+    flex-direction: row-reverse;
+    margin: 7vh auto;
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+    max-width: 1200px;
+}
+.second .second2 img{
+    width: 500px;
+}
+.second .second1 p{
+    font-family: "BPG Extrasquare";
+    font-size: 30px;
+}
+.second .second2 pre{
+
+    float: left;
+    white-space: pre-wrap;
+    font-family: "BPG Extrasquare";
+    font-size: 30px;
+}
+.third{
+    font-family: "BPG Extrasquare";
+    font-size: 30px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.third span{
+    color: #D7CA00;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+.third .partners{
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.third .partners img{
+    width: 200px;
+    height: 200px;
+}
+.fourth{
+    background-image: linear-gradient(150deg, rgb(0, 0, 0),  rgba(0, 0, 0, 0.171)), url('../Assets/Cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 17vh auto;
+}
+.fourth h1{
+    font-family: "BPG Extrasquare";
+    top: 0;
+    color: white;
+    font-weight: 200;
+    position: absolute;
+    font-size: 50px;
+}
+.fourth .gridtable{
+    margin: 20vh 0;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2vh;
+}
+.fourth .gridtable .box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+    font-size: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+}
+.fourth .gridtable .box i{
+    font-size: 60px;
+}
+.fourth .gridtable .box:nth-child(1){
+    background-color: white;
+}
+.fourth .gridtable .box:nth-child(4){
+    background-color: white;
+}
+.fourth .map { 
+    z-index: 0;
+    width: 600px;
+    height: 400px;
+}
+.fourth .map img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+    display: flex;
+    background-color: #4A4A4A;
+    color: white;
+}
+footer .company{
+    display: flex;
+    gap: 10vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .navigation ul, footer .company nav ul{
+    position: relative;;
+}
+footer .navigation ul li, footer .navigation ul, footer .company nav ul{
+    padding: 0;
+    margin: 22px 0;
+    float: none;
+}
+footer .company nav ul{
+    padding: 0;
+}
+footer .company nav ul li i{
+    font-size: 30px;
+}
+
+footer .navigation button{
+    width: 200px;
+    height: 50px;
+    background-color: #D7CA00;
+    border: none;
+    font-size: 18px;
+    padding: 0 30px;
+    font-family: 'BPG ExtraSquare';
+}
+footer .navigation h2{
+    font-weight: 100;
+    font-size: 30px;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 6vh auto;
+}
+.search h1{
+    font-weight: 100;
+    font-family: 'BPG ExtraSquare';
+}
+.search div{
+    display: flex;
+    gap: 2vh;
+}
+.search input[type=search]{
+    font-size: 24px;
+    padding: 0 3vh;
+    font-family: 'BPG Boxo';
+    width: 80%;
+    height: 50px;
+    border: 2px solid #d2c913;
+}
+
+.search input[type=submit]{
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #D7CA00;
+    border: none;
+    padding: 0 30px;
+    font-family: 'BPG ExtraSquare';
+}
+.search .searchContent{
+    margin: 12vh 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 6vh;
+}
+.searchContent .card{
+    padding: 1vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+}
+.searchContent .card img{
+    width: 100%;
+}
+.searchContent .card div{
+    width: 100%;
+}
+.searchContent .card div .rate{
+    color: #D7CA00;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.searchContent .card div input[type=submit]{
+    cursor: pointer;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+}
+.itemDesc{
+    font-family: 'BPG ExtraSquare';
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    max-width: 1200px;
+    margin: 12vh auto;
+}
+.itemDesc p{
+    font-size: 24px;
+}
+.mainContent{
+    display: flex;
+    gap: 12vh;
+}
+.mainContent > img{
+    width: 500px;
+    height: 500px;
+}
+.mainContent .main1{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.mainContent .main1 p{
+    font-size: 20px;
+}
+.mainContent .main1 i{
+    color: #D7CA00;
+}
+.mainContent .main1 .mainAssets{
+    gap: 5vh;
+    display: flex;
+}
+.mainContent .main1 .mainAssets img{
+    width: 200px;
+    height: 200px;
+}
+.aboutUs{
+    gap: 3vh;
+    margin: 12vh auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+.aboutUs img{
+    width: 400px;
+}
+.aboutUs p{
+    font-family: 'BPG ExtraSquare';
+    font-size: 25px;
+}
