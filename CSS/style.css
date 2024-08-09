@@ -430,6 +430,22 @@ footer .navigation h2{
     footer {
         gap: 10vh;
     }
+    .search input[type=search]{
+        width: 60%;
+    }
+    .search div{
+        justify-content: center;
+    }
+    .search h1{
+        text-align: center;
+    }
+    .search .searchContent{
+        gap: 15vh;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media only screen and (max-width: 960px) {
     .hamburger {
@@ -465,6 +481,7 @@ footer .navigation h2{
         z-index: 1; /* Make sure it’s above the page content */
     }
     .navMenu.active {
+        padding: 0;
         left: 0;
     }
     .navMenu li {
@@ -513,7 +530,11 @@ footer .navigation h2{
     }
 }
 
+
 @media only screen and (max-width: 800px){
+    .search .searchContent{
+        gap: 3vh;
+    }
     .third h1{
         font-size: 50px;
     }
@@ -524,6 +545,9 @@ footer .navigation h2{
 
 
 @media only screen and (max-width: 715px){
+    .search .searchContent{
+        grid-template-columns: repeat(1, 1fr);
+    }
     footer{
         flex-direction: column;
         justify-content: center;
@@ -560,6 +584,20 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 540px){
+    .search > div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search input[type=search]{
+        width: 100%;
+    }
+    .search input[type=submit]{
+        width: 100%;
+    }
+    .search h1{
+        font-size: 25px;
+    }
     footer nav ul li a{
         font-size: 18px;
     }
@@ -632,5 +670,18 @@ footer .navigation h2{
     }
     .fourth .gridtable .box p{
         font-size: 12px;
+    }
+}
+@media only screen and (max-width: 331px){
+    .searchContent .card {
+        width: 280px;
+    }
+    .fourth .gridtable{
+        width: 100%;
+
+    }
+    .fourth .gridtable .box {
+        width: 140px;
+        height: 140px;
     }
 }
