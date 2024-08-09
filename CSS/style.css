@@ -2,7 +2,9 @@
     font-family: 'BPG boxo';
     src: url(/Fonts/bpg_nino_mtavruli_bold.ttf);
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ body{
 .parent{
     background-image: linear-gradient(150deg, rgb(0, 0, 0),  rgba(0, 0, 0, 0.454)), url('../Assets/Cover.jpg');
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,11 +29,13 @@ body{
 nav ul{
     right: 0;
 }
-nav > img{
+nav a img{
+    margin-top: 4vh;
     position: absolute;
     width: 250px;
 }
 nav ul{
+    margin-top: 6vh;
     position: absolute;
     list-style: none;
     float: left;
@@ -204,6 +208,8 @@ nav ul li a{
     height: 400px;
 }
 .fourth .map img{
+    background-size: cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -376,4 +382,255 @@ footer .navigation h2{
 .aboutUs p{
     font-family: 'BPG ExtraSquare';
     font-size: 25px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+@media only screen and (max-width: 1200px) {
+    .second1, .second .second2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second .second1 .content, .second .second2 .content{
+        text-align: center;
+    }
+    .parent .intro{
+        padding: 0 3vh;
+        align-items: center;
+    }
+    .parent .intro h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .parent .intro img{
+        height: 300px;
+        width: 400px;
+    }
+  }
+@media only screen and (max-width: 1100px){
+    .fourth .map img {
+        margin-top: 20vh;
+    }
+    .fourth{
+        flex-direction: column-reverse;
+        gap: 0;
+        
+    }
+    footer {
+        gap: 10vh;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 2vh;
+        top: 5vh;
+        cursor: pointer; /* Make sure it looks clickable */
+        z-index: 2; /* Ensure it’s above the menu */
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: -200%;
+        margin: 0;
+        background-color: #262626;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease; /* Smooth transition for menu */
+        z-index: 1; /* Make sure it’s above the page content */
+    }
+    .navMenu.active {
+        left: 0;
+    }
+    .navMenu li {
+        margin: 16px 0;
+    }
+    .closeMenu {
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 2; /* Make sure it’s above other elements */
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 50px; /* Adjust size as needed */
+        z-index: 2; /* Ensure it’s above the menu */
+    }
+    footer{
+        gap: 4vh;
+    }
+
+}
+
+@media only screen and (max-width: 845px){
+    .parent .intro{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 4vh;
+        top: 18vh;
+        
+    }
+    .parent .intro button{
+        position: static;
+    }
+
+    .third .partners{
+        gap: 3vh;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .third h1{
+        font-size: 50px;
+    }
+    footer{
+        gap: 2vh;
+    }
+}
+
+
+@media only screen and (max-width: 715px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .company{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 650px){
+    .third .partners{
+        flex-direction: column;
+        gap: 10vh;
+    }
+}
+@media only screen and (max-width: 603px){
+    .third h1{
+        font-size: 40px;
+    }
+    .fourth .map{
+        width: 100%;
+        text-align: center;
+    }
+    .fourth .map img{
+        width: 500px;
+        height: 400px;
+    }
+    .second1 img, .second2 img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    footer nav ul li a{
+        font-size: 18px;
+    }
+    footer .company img{
+        width: 200px;
+    }
+    .fourth .gridtable{
+        margin: -2vh 0;
+        width: 400px;
+        height: 400px;
+    }
+    .fourth .gridtable .box{
+        font-size: 18px;
+        z-index: 1000;
+        width: 180px;
+        height: 180px;
+    }
+    .fourth .gridtable .box p{
+        font-size: 15px;
+    }
+    .fourth .gridtable .box i {
+        font-size: 30px;
+    }
+    .fourth .map img{
+        width: 400px;
+        height: 300px;
+    }
+    .second .second2 img, .second .second1 img {
+        width: 300px;
+    }
+    .parent .intro h1{
+        font-size: 30px;
+    }
+    .third h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .second .second1 .content h1, .fourth h1, .second .second2 .content h1 {
+        font-size: 40px;
+    }
+    .second .second2 pre, .second .second1 p{
+        font-size: 20px;
+    }
+    .third .partners img{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 420px){
+    .parent .intro img{
+        width: 100%;
+        height: 300px;
+    }
+    .fourth .map img{
+        width: 100%;
+        height: 300px;
+
+    }
+    .fourth .gridtable{
+        width: 300px;
+        height: 300px;
+    }
+    .fourth .gridtable .box{
+        font-size: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .fourth .gridtable .box i{
+        font-size: 20px;
+    }
+    .fourth .gridtable .box p{
+        font-size: 12px;
+    }
 }

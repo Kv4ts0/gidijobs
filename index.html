@@ -12,14 +12,24 @@
     <div class="parent">
         <section class="first">
             <nav>
-                <img src="./Assets/Logo.svg" alt="Company logo">
-                <ul>
-                    <li><a id="active" href="index.html">მთავარი</a></li>
-                    <li><a href="jobs.html">სამსახურები</a></li>
-                    <li><a href="about.html">ჩვენ შესახებ</a></li>
-                    <li><a href="">კონტაქტი</a></li>
+                <a href="index.html">
+                    <img src="./Assets/Logo.svg" alt="Company logo" class="logo">
+                </a>
+                <ul class="navMenu">
+                    <li class="navLink"><a id="active" href="index.html">მთავარი</a></li>
+                    <li class="navLink"><a href="jobs.html">სამსახურები</a></li>
+                    <li class="navLink"><a href="about.html">ჩვენ შესახებ</a></li>
+                    <li class="navLink"><a href="index.html#sec2">კონტაქტი</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
+            
+            
+            
         </section>
         <div class="intro">
             <h1>შეავსე განაცხადი და <span>დასაქმდი ისრაელში</span> დღესვე!</h1>
@@ -59,39 +69,43 @@
                 <img src="./Assets/partner3.png" alt="Logo of Archi Group">
             </div>
     </div>
-    <div class="fourth">
-        <h1>კონტაქტი</h1>
-        <div class="gridtable">
-            <div class="box">
-                <i class="fa-regular fa-map"></i>
-                <h3>მისამართი</h3>
-                <p>რუსთაველის გამზ. #12</p>
+    <section id="sec2"> 
+        <div class="fourth">
+            <h1>კონტაქტი</h1>
+            <div class="gridtable">
+                <div class="box">
+                    <i class="fa-regular fa-map"></i>
+                    <h3>მისამართი</h3>
+                    <p>რუსთაველის გამზ. #12</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>მობილური</h3>
+                    <p>551 14 14 11</p>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    <h3>სოც-ქსელები</h3>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h3>მეილი</h3>
+                    <p>Info.gidijobs@gmail.com</p>
+                </div>
             </div>
-            <div class="box">
-                <i class="fa-solid fa-phone"></i>
-                <h3>მობილური</h3>
-                <p>551 14 14 11</p>
+            <div class="map">
+                <img src="./Assets/map.png" alt="">
             </div>
-            <div class="box">
-                <i class="fa-regular fa-share-from-square"></i>
-                <h3>სოც-ქსელები</h3>
-                <p></p>
-            </div>
-            <div class="box">
-                <i class="fa-regular fa-envelope"></i>
-                <h3>მეილი</h3>
-                <p>Info.gidijobs@gmail.com</p>
-            </div>
-        </div>
-        <div class="map">
-            <img src="./Assets/map.png" alt="">
-        </div>
-    </div>    
+        </div>    
+    </section>
 <!--  -->
 <!-- Footer -->
     <footer>
         <div class="company">
-            <img src="./Assets/Logo.svg" alt="Company Logo">
+            <a href="index.html">
+                <img src="./Assets/Logo.svg" alt="Company logo">
+            </a>
             <nav>
                 <ul>
                     <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -106,7 +120,7 @@
                     <li><a href="index.html" id="active">მთავარი</a></li>
                     <li><a href="jobs.html">სამსახურები</a></li>
                     <li><a href="about.html">ჩვენ შესახებ</a></li>
-                    <li><a href="#">კონტაქტი</a></li>
+                    <li><a href="index.html#sec2">კონტაქტი</a></li>
                 </ul>
             </nav>
         </div>
@@ -124,5 +138,8 @@
 
     </footer>
 <!--  -->
+<script src="./JS/index.js">
+
+</script>
 </body>
 </html>
