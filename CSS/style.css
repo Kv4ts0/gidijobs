@@ -397,6 +397,9 @@ footer .navigation h2{
     background-color: white;
 }
 @media only screen and (max-width: 1200px) {
+    .itemDesc{
+        padding: 0 5vh;
+    }
     .second1, .second .second2{
         flex-direction: column;
         justify-content: center;
@@ -419,6 +422,22 @@ footer .navigation h2{
     }
   }
 @media only screen and (max-width: 1100px){
+    .itemDesc{
+        text-align: center;
+    }
+    .mainContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+    }
+    .aboutUs img{
+        width: 300px;
+    }
+    .aboutUs{
+        padding: 0 10vh;
+    }
     .fourth .map img {
         margin-top: 20vh;
     }
@@ -561,6 +580,11 @@ footer .navigation h2{
     }
 }
 @media only screen and (max-width: 650px){
+    
+    .aboutUs{
+        align-items: center;
+        text-align: center;
+    }
     .third .partners{
         flex-direction: column;
         gap: 10vh;
@@ -584,6 +608,19 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 540px){
+    .mainContent .main1 .mainAssets{
+        justify-content: center;
+        width: 100%;
+    }
+    .mainContent .main1 .mainAssets img{
+        object-fit: cover;
+        height: 150px;
+        width: 150px;
+    }
+    .mainContent > img{
+        object-fit: cover;
+        width: 100%;
+    }
     .search > div{
         flex-direction: column;
         align-items: center;
@@ -647,6 +684,14 @@ footer .navigation h2{
     }
 }
 @media only screen and (max-width: 420px){
+
+    .mainContent .main1 .mainAssets img{
+        height: 100px;
+        width: 100px;
+    }
+    .mainContent > img{
+        height: 300px;
+    }
     .parent .intro img{
         width: 100%;
         height: 300px;
