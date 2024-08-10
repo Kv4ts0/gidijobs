@@ -12,7 +12,7 @@ html {
 body{
     margin: 0;
     padding: 0;
-    font-family: 'BPG boxo', sans-serif;
+    font-family: 'BPG boxo';
 }
 
 
@@ -398,6 +398,50 @@ footer .navigation h2{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+.form{
+    margin: 16vh auto;
+    justify-content: center;
+    gap: 12vh;
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+}
+.form .fields{
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.form h1{
+    font-family: 'BPG Extrasquare', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    top: -12vh;
+    position: absolute;
+}
+.form .fields input{
+    font-weight: 100;
+    font-family: 'BPG Extrasquare', sans-serif;
+    font-size: 23px;
+    box-shadow: 3px 1px 3px 0px rgba(0, 0, 0, 0.2), 10px 4px 4px 0 rgba(0, 0, 0, 0.19);
+    height: 50px;
+    border: none;
+    width: 100%;
+}
+.form .fields input[type="text"], .form .fields input[type="number"], .form .fields input[type="email"]{
+    font-size: 20px;
+    opacity: 60%;
+}
+.form .fields textarea{
+    border: none;
+    box-shadow: 3px 1px 3px 0px rgba(0, 0, 0, 0.2), 10px 4px 4px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+.form .fields input[type="submit"]{
+    background-color: #D7CA00;
+}
 @media only screen and (max-width: 1200px) {
     .itemDesc{
         padding: 0 5vh;
@@ -424,6 +468,9 @@ footer .navigation h2{
     }
   }
 @media only screen and (max-width: 1100px){
+    .form{
+        gap: 5vh;
+    }
     .itemDesc{
         text-align: center;
     }
@@ -469,6 +516,9 @@ footer .navigation h2{
     }
 }
 @media only screen and (max-width: 960px) {
+    .form{
+        padding: 0 5vh;
+    }
     .hamburger {
         display: block;
         position: absolute;
@@ -533,6 +583,14 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 845px){
+    .form{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .form img{
+        width: 400px;
+    }
     .parent .intro{
         flex-direction: column;
         align-items: center;
@@ -610,6 +668,12 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 540px){
+    .form .fields{
+        width: 350px;
+    }
+    .form img{
+        width: 300px;
+    }
     .parent .intro {
         top: 30vh;
     }
@@ -721,6 +785,17 @@ footer .navigation h2{
     }
     .fourth .gridtable .box p{
         font-size: 12px;
+    }
+}
+@media only screen and (max-width: 370px){
+    .form h1{
+        font-size: 28px;
+    }
+    .form .fields{
+        width: 280px;
+    }
+    .form img{
+        width: 230px;
     }
 }
 @media only screen and (max-width: 331px){
