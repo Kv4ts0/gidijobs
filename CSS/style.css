@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BPG nino';
-    src: url(../Fonts/bpg_nino_mtavruli_bold.ttf);
+    src: url('../Fonts/bpg_nino_mtavruli_bold.ttf');
 }
 html {
     scroll-behavior: smooth;
