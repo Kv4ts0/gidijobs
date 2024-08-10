@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'BPG nino';
-    src: url('../Fonts/bpg_nino_mtavruli_bold.ttf');
+    font-family: 'BPG boxo';
+    src: url('../Fonts/bpg_boxo.ttf');
 }
 html {
     scroll-behavior: smooth;
@@ -8,7 +8,7 @@ html {
 body{
     margin: 0;
     padding: 0;
-    font-family: 'BPG nino', sans-serif;
+    font-family: 'BPG boxo', sans-serif;
 }
 
 
