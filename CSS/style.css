@@ -2,6 +2,10 @@
     font-family: 'BPG boxo';
     src: url('../Fonts/bpg_boxo.ttf');
 }
+@font-face {
+    font-family: 'BPG Extrasquare';
+    src: url('../Fonts/bpg_mrgvlovani_caps_2010.ttf');
+}
 html {
     scroll-behavior: smooth;
 }
