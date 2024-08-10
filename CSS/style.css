@@ -65,14 +65,13 @@ nav ul li a{
     font-weight: 100;
     font-family: 'BPG Extrasquare';
     color: white;
-    width: 700px;
 }
 .parent .intro span{
     color: #D7CA00;
 }
 .parent .intro button{
     position: absolute;
-    bottom: 0;
+    bottom: -10vh;
     width: 200px;
     height: 50px;
     background-color: #D7CA00;
@@ -150,7 +149,6 @@ nav ul li a{
 }
 .third .partners img{
     width: 200px;
-    height: 200px;
 }
 .fourth{
     background-image: linear-gradient(150deg, rgb(0, 0, 0),  rgba(0, 0, 0, 0.171)), url('../Assets/Cover.jpg');
@@ -608,6 +606,12 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 540px){
+    .parent .intro {
+        top: 30vh;
+    }
+    .parent .intro img{
+        display: none;
+    }
     .mainContent .main1 .mainAssets{
         justify-content: center;
         width: 100%;
@@ -622,6 +626,7 @@ footer .navigation h2{
         width: 100%;
     }
     .search > div{
+        padding: 0 2vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -664,9 +669,6 @@ footer .navigation h2{
     }
     .second .second2 img, .second .second1 img {
         width: 300px;
-    }
-    .parent .intro h1{
-        font-size: 30px;
     }
     .third h1{
         text-align: center;
