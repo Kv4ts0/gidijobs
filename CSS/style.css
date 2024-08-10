@@ -73,9 +73,10 @@ nav ul li a{
 .parent .intro span{
     color: #D7CA00;
 }
-.parent .intro button{
+.parent .intro a input[type="submit"]{
     position: absolute;
     bottom: -10vh;
+    left: 0;
     width: 200px;
     height: 50px;
     background-color: #D7CA00;
@@ -250,7 +251,7 @@ footer .company nav ul li i{
     font-size: 30px;
 }
 
-footer .navigation button{
+footer .navigation input[type="submit"]{
     width: 200px;
     height: 50px;
     background-color: #D7CA00;
@@ -443,6 +444,10 @@ footer .navigation h2{
     background-color: #D7CA00;
 }
 @media only screen and (max-width: 1200px) {
+    .parent .intro a input[type="submit"]{
+        margin-left: 3vh;
+    }
+
     .itemDesc{
         padding: 0 5vh;
     }
@@ -583,6 +588,11 @@ footer .navigation h2{
 }
 
 @media only screen and (max-width: 845px){
+    .parent .intro a input[type="submit"]{
+        position: relative;
+        bottom: 0;
+        margin: 0;
+    }
     .form{
         justify-content: center;
         align-items: center;
